@@ -1,0 +1,41 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+    <!-- Copyright 2006, 2010 Oracle Corporation. All rights reserved. -->
+    <servlet>
+        <servlet-name>giv-kort</servlet-name>
+        <servlet-class>dk.zbc.h4.kortspil.servlet.Givkortservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>giv-kort</servlet-name>
+        <url-pattern>/givkort</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>spil</servlet-name>
+        <servlet-class>dk.zbc.h4.kortspil.servlet.Spilservlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>spil</servlet-name>
+        <url-pattern>/spil</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>vis-kort</servlet-name>
+        <servlet-class>dk.zbc.h4.kortspil.servlet.VisKortServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vis-kort</servlet-name>
+        <url-pattern>/viskort</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>vis-spillere</servlet-name>
+        <servlet-class>dk.zbc.h4.kortspil.servlet.ListSpillereServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>vis-spillere</servlet-name>
+        <url-pattern>/visspillere</url-pattern>
+    </servlet-mapping>
+    </web-app>

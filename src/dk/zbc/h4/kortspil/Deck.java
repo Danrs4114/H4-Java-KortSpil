@@ -11,6 +11,6 @@ public class Deck extends ArrayList<Kort> {
     }
 
     public void tilfoejKort(Kort kort) {
-        add(kort);
+        super.add(kort);
     }
 }

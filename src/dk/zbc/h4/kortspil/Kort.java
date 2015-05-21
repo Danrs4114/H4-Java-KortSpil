@@ -39,5 +39,5 @@ public class Kort {
         //return "Værdi: " + vaerdi + ", Kulør;" + kuloer.toString();
         return kuloer.toString() + " " +  vaerdi;
     }
-    
+
 }
